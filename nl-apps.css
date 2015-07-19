@@ -1,25 +1,80 @@
-body{
-	background-color : #c3c5ff;
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,400|Raleway:700);
+
+div#nathanLawrence{
+	font-family : 'Raleway', sans-serif;
+	font-size : 400%;
 }
+
+span.nathan{
+	color : #800000;
+}
+
+.responsiveBody{
+	font-family: 'Roboto', sans-serif;
+	padding-left : 5%;
+	padding-right : 5%;
+}
+
+.TKAdjustableNumber{
+	color : #800000;
+}
+
+blockquote{
+	padding-left : 0.5em;
+	padding-top : 0.5em;
+	padding-bottom : 0.5em;
+	background-color : #d3d3d3;
+	width : 50%;
+	font-style : italic;
+}
+
+strong{
+	color : #800000;
+}
+
 h1{
-	text-align : center;
+	font-family: 'Roboto', sans-serif;
 }
+
+a{
+	color : #800000;
+	text-decoration : none;
+}
+
+a:hover{
+	text-decoration : underline;
+}
+
 .byline{
 	text-align : center;
 }
+
 #app-guts{
-	background-color : #61627f;
-	width : 40%;
+	background-color : #d3d3d3;
+	width : 50%;
 	text-align : center;
 	line-height : 200%;
-	padding-top : 5em;
-	padding-bottom : 5em;
 	margin-left : auto;
 	margin-right : auto;
+	padding-top : 1em;
+	padding-bottom : 1em;
 }
-#app-guts::before{
-:w
-	font : 14px arial, sans-serif;
-	content : "The App";
+
+.submitButton {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family : 'Roboto';
+  color: #ffffff;
+  font-size: 80%;
+  background: #800;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin : 0.5em;
+  text-decoration: none;
+}
+
+.submitButton:hover {
+  background: #800000;
+  text-decoration: underline;
 }
 

@@ -4,27 +4,29 @@
 	<link rel="stylesheet" type="text/css" href="nl-apps.css">
 	<title>The Universal File Uploader and Embedder - Input</title>
 <body>
+	<div class="responsiveBody">
 	<h1>The Universal File Uploader and Embedder</h1>
-	<p class="byline">By Nathan Lawrence. Version 2015.4.28</p>
+	<p class="byline">By <a href="http://www.nathanlawrence.org">Nathan Lawrence</a>. Version 2015.7.18</p>
 	<div id="app-description">
 	<p>This small PHP utility automatically uploads HTML and image files into a folder one level up from its own current home and generates iFrame embed code in specified pixel dimensions.</p>
 	<p>For obvious reasons, unless you want to become a free web host to anyone and everyone, some basic security precautions -- including a properly configured robots.txt and PHP.ini file -- are probably in order. This submission page is also easily configurable for IP address or password based submission validation in Javascript.</p></div>
 	<div id="app-guts">
-	<form action="upload.php" method="post" enctype="multipart/form-data">
-		Select file to upload:
-		<input type="file" name="fileToUpload" id="fileToUpload">
-		<br>
-		Embed Dimensions:
-		<br>
-		Width: 
-		<input type="text" name="embedWidth" value="480">
-		Height: 
-		<input type="text" name="embedHeight" value="640">
-		<br>
-		<input type="submit" value="Upload and Generate Embed Code" name="submit">
-	</form>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			Select file to upload:
+			<input type="file" name="fileToUpload" id="fileToUpload">
+			<br>
+			Embed Dimensions:
+			<br>
+			Width: 
+			<input type="text" name="embedWidth" value="480">
+			Height: 
+			<input type="text" name="embedHeight" value="640">
+			<br>
+			<input type="submit" class="submitButton" value="Upload and Generate Embed Code" name="submit">
+		</form>
 	</div>
-</body
+	</div>
+</body>
 <foot>
 </foot>
 </html>
