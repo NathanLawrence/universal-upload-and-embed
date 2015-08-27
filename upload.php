@@ -27,7 +27,7 @@ if ($uploadOk == 0) {
 	echo "The file <a href=\"{$finalURL}\">" .  basename($_FILES["fileToUpload"]["name"]) .  "</a> has been uploaded. To embed, copy and past the following code:<br>";
 	echo "
 		<form method=\"post\" enctype=\"multipart/form-data\">
-		<input type=\"text\" name=\"embedCode\" value=\"<iframe height={$embedHeight}px width={$embedWidth}px src='{$finalURL}'></iframe>\">
+		<input type=\"text\" name=\"embedCode\" value=\"<iframe height={$embedHeight}px width={$embedWidth}px src='{$finalURL}' seamless></iframe>\">
 		</form>";
     } else {
         echo "Sorry, there was an error uploading your file.";
