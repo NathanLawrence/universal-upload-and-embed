@@ -24,10 +24,11 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-	echo "The file <a href=\"{$finalURL}\">" .  basename($_FILES["fileToUpload"]["name"]) .  "</a> has been uploaded. To embed, copy and past the following code:<br>";
+	echo "<div class=\"responsiveBody\"><h1>The file <a href=\"{$finalURL}\">" .  basename($_FILES["fileToUpload"]["name"]) .  "</a> has been uploaded.</h1> <p>To embed, copy and past the following code:</p><br>";
 	echo "
-		<form method=\"post\" enctype=\"multipart/form-data\">
-		<input type=\"text\" name=\"embedCode\" value=\"<iframe height={$embedHeight}px width={$embedWidth}px src='{$finalURL}' seamless></iframe>\">
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"http://projects.nathanlawrence.org/styles.css\">
+		<input type=\"text\" name=\"embedCode\" size=50 value=\"<iframe height={$embedHeight}px width={$embedWidth}px src='{$finalURL}' seamless></iframe>\">
+        </div>
 		</form>";
     } else {
         echo "Sorry, there was an error uploading your file.";
