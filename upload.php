@@ -6,7 +6,7 @@ $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 $embedHeight = $_POST["embedHeight"];
 $embedWidth = $_POST["embedWidth"];
-$baseURL = "http://ec2-52-1-90-185.compute-1.amazonaws.com/uploads/";
+$baseURL = "http://www.mysite.com/uploads/"; // Add your system's base URL here.
 $finalURL= $baseURL . $fileName;
 // Check if file already exists
 if (file_exists($target_file)) {
